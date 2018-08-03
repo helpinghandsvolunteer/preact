@@ -1,10 +1,72 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'DINPro-Black';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Black.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Black.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-Bold';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Bold.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Bold.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-Light';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Light.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Light.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Medium.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Medium.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINPro-Regular';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Regular.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Regular.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/DINPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/gotham-black-58efd8d00a9ae.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/gotham-black-58efd8d00a9ae.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/gotham-black-58efd8d00a9ae.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Book.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Book.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src:url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Medium.woff2') format('woff2'),
+    url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Medium.woff') format('woff'),
+    url('https://storage.googleapis.com/helpinghands/fonts/Gotham-Medium.ttf') format('truetype');
+}
+
+* {
+  font-family: 'DINPro-Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
 	padding: 0;
 	margin: 0;
 	background: #FAFAFA;
-	font-family: 'Helvetica Neue', arial, sans-serif;
+	/* font-family: 'Helvetica Neue', arial, sans-serif; */
 	font-weight: 400;
 	color: #444;
 	-webkit-font-smoothing: antialiased;
