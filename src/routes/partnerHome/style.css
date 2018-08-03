@@ -1,3 +1,22 @@
+.arrow {
+	font-family: 'DINPro-Light';
+	font-size: 64px;
+}
+
+.arrow>.left, .arrow>.right {
+	color: #707070;
+	font-family: "DINPro-Light";
+	position: absolute;
+}
+
+.left {
+	left: 10px;
+}
+
+.right {
+	right: 10px;
+}
+
 .partner {
 	align-items: center;
 	background-color: #2B2B2B;
@@ -8,7 +27,7 @@
 	width: 100%;
 }
 
-.partner>a {
+.partner>a, .arrow>a {
 	text-decoration: none;
 }
 
