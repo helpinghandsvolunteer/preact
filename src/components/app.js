@@ -5,9 +5,11 @@ import Header from './header';
 
 // Code-splitting is automated for routes
 import Employee from '../routes/employeeHome';
+import EmployeeDashboard from '../routes/employeeDashboard';
 import Employer from '../routes/employerHome';
+import EmployerDashboard from '../routes/employerDashboard';
 import Partner from '../routes/partnerHome';
-
+import PartnerDashboard from '../routes/partnerDashboard';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 
@@ -24,11 +26,14 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
-				<Header />
+			
 				<Router onChange={this.handleRoute}>
 					<Employee path="/" />
+					<EmployeeDashboard path="/dashboard" />
 					<Employer path="/employer" />
+					<EmployerDashboard path="/employer/dashboard" />
 					<Partner path="/partner" />
+					<Partner path="/partner/dashboard" />
 					<Home path="/home" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
