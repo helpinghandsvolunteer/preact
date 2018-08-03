@@ -33,7 +33,7 @@ export default class App extends Component {
 					<Employer path="/employer" />
 					<EmployerDashboard path="/employer/dashboard" />
 					<Partner path="/partner" />
-					<Partner path="/partner/dashboard" />
+					<PartnerDashboard path="/partner/dashboard" />
 					<Home path="/home" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />

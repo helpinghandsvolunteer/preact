@@ -1,6 +1,33 @@
 .employer {
+	align-items: center;
 	background-color: #2B2B2B;
-	padding: 56px 20px;
-	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 	width: 100%;
+}
+
+.employer>a {
+	text-decoration: none;
+}
+
+.employer_header {
+	border-bottom: solid 3px #1A937C;
+	color: #1A937C;
+	font-family: 'Gotham-Black';
+	font-size: 75px;
+	margin: 0;
+	padding-bottom: 25px;
+	text-align: center;
+	width: 197px;
+}
+
+.employer_paragraph {
+	color: #FFFFFF;
+	font-family: 'DINPro-Regular';
+	font-size: 15px;
+	padding-top: 6px;
+	text-align: center;
+	text-transform: uppercase;
 }
