@@ -1,6 +1,8 @@
 {
   "private": true,
   "name": "helping-hands-preact",
+  "author": "Russell Schmidt and Ben Conklin",
+  "description": "The Helping Hands MVP version 0 demo Potemkin Village app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
