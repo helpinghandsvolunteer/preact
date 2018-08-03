@@ -49,3 +49,15 @@
 	top: -90px;
 	left: 680px;
 }
+
+.employeeDashboard_profile {
+	position: relative;
+	left: 600px;
+	top: -100px;
+}
+
+.employeeDashboard_profileImg {
+	height: 32px;
+	position: relative;
+	width: 32px;
+}

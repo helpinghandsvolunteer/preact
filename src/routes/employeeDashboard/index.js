@@ -23,7 +23,7 @@ const EmployeeDashboard = () => (
 
 			<div class={style.employeeDashboard_profile}>
 				<div class={style.employeeDashboard_profileImg}>
-					<img src="" alt="profile image"/>
+					<img src="https://storage.googleapis.com/helpinghands/images/profile_avatar%402x.png" alt="profile image" />
 				</div>
 				<div class={style.employeeDashboard_profileGreeting}>
 					<p>Welcome back!</p>
