@@ -1,33 +1,51 @@
-.employee {
-	align-items: center;
-	background-color: #37394C;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+.employeeDashboard {
+	background-color: #E2E5ED;
 	height: 100%;
 	width: 100%;
 }
 
-.employee>a {
-	text-decoration: none;
+.employeeDashboard_logo {
+	padding: 41px 0 0 45px;
+	width: 100px;
 }
 
-.employee_header {
-	border-bottom: solid 3px #EA0D51;
-	color: #EA0D51;
-	font-family: 'Gotham-Black';
-	font-size: 75px;
-	margin: 0;
-	padding-bottom: 25px;
-	text-align: center;
-	width: 197px;
+.employeeDashboard_topnav {
+	background-color: #37394C;
+	height: 124px;
 }
 
-.employee_paragraph {
-	color: #FFFFFF;
+.employeeDashboard_link {
+	color: #ffffff;	
+	font-family: "DINPro-Bold";
+	height: 15px;
+	left: 214px;
+	padding-right: 40px;
+	position: relative;
+	text-transform: uppercase;
+	top: -48px;
+}
+
+.employeeDashboard_linkContainer {
+	display: flex;
+	flex: row nowrap;
+	position: relative;
+}
+
+.employeeDashboard_search {
+	border-radius: 25px;
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
-	padding-top: 6px;
-	text-align: center;
-	text-transform: uppercase;
+	height: 46px;
+	width: 426px;
+}
+
+.employeeDashboard_search::placeholder {
+	color: #ADADAD;
+	padding-left: 39px;
+}
+
+.employeeDashboard_searchContainer {
+	position: relative;
+	top: -90px;
+	left: 680px;
 }
