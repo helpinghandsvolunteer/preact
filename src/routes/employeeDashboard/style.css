@@ -36,10 +36,6 @@
 	width: 100px;
 }
 
-.employeeDashboard_profileContainer {
-
-}
-
 .employeeDashboard_profileContainer_img {
 	display: block;
 	float: left;
@@ -71,10 +67,10 @@
 }
 
 .employeeDashboard_searchContainer > img {
-	height: 24px;
-	left: 40px;
+	height: 20px;
+	left: 35px;
 	position: relative;
-	top: 10px;
+	top: 5px;
 }
 
 .employeeDashboard_searchContainer > input {
