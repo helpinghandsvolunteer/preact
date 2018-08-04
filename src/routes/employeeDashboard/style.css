@@ -10,8 +10,8 @@
 	display: flex;
 	flex-flow: row nowrap;
 	float: left;
-	justify-content: space-around;
-	padding-top: 35px;
+	justify-content: space-between;
+	padding: 35px 25px 0 80px;
 	text-align: right;
 	width: calc(100vw - 100px);
 }
