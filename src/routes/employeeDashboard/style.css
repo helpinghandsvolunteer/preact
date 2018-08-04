@@ -75,7 +75,7 @@
 }
 
 .employeeDashboard_searchContainer > input {
-	background: ##F3F3F5;
+	background: #F3F3F5;
 	color: #ffffff;
 	padding-left: 39px;
 }
@@ -91,67 +91,4 @@
 	height: 124px;
 	position: fixed;
 	z-index: 10;
-}
-
-/* side nav bar - collapse state */
-.employeeDashboard_sidenav {
-	background-color: #434559;
-	height: 100vh;
-	position: fixed;
-	width: 142px;
-} 
-
-.employeeDashboard_icon, .employeeDashboard_iconContainer > a {
-	margin: 2vh auto;
-}
-.employeeDashboard_icon:nth-child(1) {
-	height: 29px;
-	width: 4px;
-}
-
-.employeeDashboard_icon:nth-child(2) {
-	height: 26px;
-	width: 31px;
-}
-
-.employeeDashboard_icon:nth-child(3) {
-	height: 28px;
-	width: 30px;
-}
-
-.employeeDashboard_icon:nth-child(4) {
-	height: 35px;
-	width: 35px;
-}
-
-.employeeDashboard_icon:nth-child(5) {
-	height: 27px;
-	width: 45px;
-}
-
-.employeeDashboard_icon:nth-child(6) {
-	height: 29px;
-	width: 22px;
-}
-
-.employeeDashboard_icon:nth-child(7) {
-	height: 24px;
-	width: 28px;
-}
-
-.employeeDashboard_icon:nth-child(8) {
-	margin: 20vh auto;
-}
-
-.employeeDashboard_icon_exitIcon {
-	height: 30px;
-	width: 28px;
-}
-
-.employeeDashboard_iconContainer {
-	display: flex;
-	flex-flow: column wrap;
-	height: 100%;
-	justify-content: space-between;
-	margin-top: 160px;
 }
