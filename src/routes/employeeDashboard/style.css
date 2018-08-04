@@ -1,3 +1,4 @@
+/* top nav bar */
 .employeeDashboard {
 	background-color: #E2E5ED;
 	height: 100%;
@@ -89,3 +90,10 @@
 	background-color: #37394C;
 	height: 124px;
 }
+
+/* side nav bar - collapse state */
+.employeeDashboard_sidenav {
+	background-color: #434559;
+	height: calc(100vh - 124px);
+	width: 142px;
+} 

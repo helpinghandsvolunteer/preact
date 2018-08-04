@@ -30,6 +30,9 @@ const EmployeeDashboard = () => (
 				</div>
 			</div>
 		</div>
+
+		<div class={style.employeeDashboard_sidenav}>
+		</div>
 	</div>
 );
 
