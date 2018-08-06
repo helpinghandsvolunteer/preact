@@ -5,7 +5,7 @@ import style from './style';
 const sideNavExpanded = (props) => (
 	<div class={style.employeeDashboard_sidenav}>
 		<div class={style.employeeDashboard_iconContainer}>
-			<button onClick={props.handleViewSidebar}>
+			<button onClick={props.switchSidebar}>
 				<img class={style.employeeDashboard_icon} src="https://storage.googleapis.com/helpinghands/images/dots-icon%402x.png" alt="collapse dots icon" />
 			</button>
 			<img class={style.employeeDashboard_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />

@@ -43,7 +43,7 @@ export default class EmployeeDashboard extends Component {
 					</div>
 				</div>
 
-				{this.state.sidebarOpen ? <SideNavExpanded onSelectSidebar={this.handleViewSidebar} /> : <SideNavCollapsed onSelectSidebar={this.handleViewSidebar} />}
+				{this.state.sidebarOpen ? <SideNavExpanded switchSidebar={this.handleViewSidebar} /> : <SideNavCollapsed switchSidebar={this.handleViewSidebar} />}
 			</div>
 		);
 	}

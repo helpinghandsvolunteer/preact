@@ -3,15 +3,12 @@ import { Link } from 'preact-router/match';
 import style from './style';
 
 export default class sideNavCollapsed extends Component {
-	handleSidebarChange = () => {
-		this.props.onSelectSidebar();
-	}
 
 	render() {
 		return (
 			<div class={style.employeeDashboard_sidenav}>
 				<div class={style.employeeDashboard_iconContainer}>
-					<button onClick={this.handleSidebarChange}>
+					<button onClick={this.props.switchSidebar}>
 						<img class={style.employeeDashboard_icon} src="https://storage.googleapis.com/helpinghands/images/dots-icon%402x.png" alt="collapse dots icon" />
 					</button>
 					<img class={style.employeeDashboard_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />
