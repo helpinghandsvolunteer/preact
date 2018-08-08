@@ -8,7 +8,7 @@ import SideNavExpanded from '../../components/sideNavExpanded';
 
 export default class EmployeeDashboard extends Component {
 	state = {
-		sidebarOpen: false
+		sidebarOpen: true
 	};
 
 	handleViewSidebar = () => {

@@ -2,52 +2,133 @@
  *  Side Nav Bar - Expanded state
  */
 
- .employeeDashboard_sidenav {
+ .employeeDashboard_exp_sidenav {
 	background-color: #434559;
 	height: 100vh;
 	position: fixed;
-	width: 242px;
+	width: 309px;
 } 
+
+.employeeDashboard_exp_iconsContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+	margin-top: 160px;
+}
+
+.employeeDashboard_exp_iconContainer {
+	margin: 2vh auto auto 51px;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.employeeDashboard_exp_p {
+	color: #dddddd;
+}
+
+/* 
+ * Icons
+ *
+ *
+ */
+#icon_collapse button {
+	background-color: #434559;
+	border: none;
+}
+#icon_collapse img {
+	background-color: #434559;
+	border: none;
+}
+
+#icon_dashboard {
+
+}
+
+#icon_events {
+
+}
+
+#icon_messages {
+
+}
+
+#icon_network {
+
+}
+
+#icon_saves {
+
+}
+
+#icon_activity {
+
+}
+
+#icon_exit {
+
+}
+
+
+ /* 
+
+ #icon_expand button {
+	height: 29px;
+	width: 4px;
+	 background-color: #434559;
+	 border: none;
+ }
+
+
+
+.employeeDashboard_expandedSidenavContainer {
+
+}
+
+.employeeDashboard_expandedSidenavContainer img {
+	
+	display: inline-block;
+}
+
+.employeeDashboard_expandedSidenavContainer p {
+	color: #dddddd;
+	display: inline-block;
+}
 
 .employeeDashboard_icon, .employeeDashboard_iconContainer > a {
 	margin: 2vh auto;
 }
-.employeeDashboard_icon:nth-child(1) {
-	height: 29px;
-	width: 4px;
-}
 
-.employeeDashboard_icon:nth-child(2) {
+.employeeDashboard_expandedSidenavContainer:nth-child(2) {
 	height: 26px;
 	width: 31px;
 }
 
-.employeeDashboard_icon:nth-child(3) {
+.employeeDashboard_expandedSidenavContainer:nth-child(3) {
 	height: 28px;
 	width: 30px;
 }
 
-.employeeDashboard_icon:nth-child(4) {
+.employeeDashboard_expandedSidenavContainer:nth-child(4) {
 	height: 35px;
 	width: 35px;
 }
 
-.employeeDashboard_icon:nth-child(5) {
+.employeeDashboard_expandedSidenavContainer:nth-child(5) {
 	height: 27px;
 	width: 45px;
 }
 
-.employeeDashboard_icon:nth-child(6) {
+.employeeDashboard_expandedSidenavContainer:nth-child(6) {
 	height: 29px;
 	width: 22px;
 }
 
-.employeeDashboard_icon:nth-child(7) {
+.employeeDashboard_expandedSidenavContainer:nth-child(7) {
 	height: 24px;
 	width: 28px;
 }
 
-.employeeDashboard_icon:nth-child(8) {
+.employeeDashboard_expandedSidenavContainer:nth-child(8) {
 	margin: 20vh auto;
 }
 
@@ -56,15 +137,7 @@
 	width: 28px;
 }
 
-.employeeDashboard_iconContainer {
-	display: flex;
-	flex-flow: column wrap;
-	height: 100%;
-	justify-content: space-between;
-	margin-top: 160px;
-}
-
 .employeeDashboard_iconContainer > button, .employeeDashboard_iconContainer > a {
 	background-color: #434559;
 	border: none;
-}
+} */
