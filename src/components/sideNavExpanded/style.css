@@ -16,14 +16,27 @@
 	margin-top: 160px;
 }
 
-.employeeDashboard_exp_iconContainer {
-	margin: 2vh auto auto 51px;
+.employeeDashboard_exp_iconInnerContainer {
+	width: 90px;
+	padding-left: 31px;
+	text-align: center;
+}
+
+.employeeDashboard_exp_iconContainer, .employeeDashboard_exp_iconContainer a {
+	margin-top: 10px;
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
 }
 
 .employeeDashboard_exp_p {
 	color: #dddddd;
+	font-family: 'DINPro-Regular';
+	font-size: 15px;
+	line-height: 1.333;
+	margin-top: 15px;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 /* 
@@ -31,6 +44,9 @@
  *
  *
  */
+#icon_collapse {
+	padding-bottom: 10px;
+}
 #icon_collapse button {
 	background-color: #434559;
 	border: none;
@@ -38,106 +54,50 @@
 #icon_collapse img {
 	background-color: #434559;
 	border: none;
+	height: 18px;
+	width: 14px;
 }
 
-#icon_dashboard {
-
-}
-
-#icon_events {
-
-}
-
-#icon_messages {
-
-}
-
-#icon_network {
-
-}
-
-#icon_saves {
-
-}
-
-#icon_activity {
-
-}
-
-#icon_exit {
-
-}
-
-
- /* 
-
- #icon_expand button {
-	height: 29px;
-	width: 4px;
-	 background-color: #434559;
-	 border: none;
- }
-
-
-
-.employeeDashboard_expandedSidenavContainer {
-
-}
-
-.employeeDashboard_expandedSidenavContainer img {
-	
-	display: inline-block;
-}
-
-.employeeDashboard_expandedSidenavContainer p {
-	color: #dddddd;
-	display: inline-block;
-}
-
-.employeeDashboard_icon, .employeeDashboard_iconContainer > a {
-	margin: 2vh auto;
-}
-
-.employeeDashboard_expandedSidenavContainer:nth-child(2) {
+#icon_dashboard img {
 	height: 26px;
 	width: 31px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(3) {
+#icon_dashboard p {
+	color: #fff;
+}
+
+#icon_events img {
 	height: 28px;
 	width: 30px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(4) {
+#icon_messages img {
 	height: 35px;
 	width: 35px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(5) {
+#icon_network img {
 	height: 27px;
 	width: 45px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(6) {
+#icon_saves img {
 	height: 29px;
 	width: 22px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(7) {
+#icon_activity img {
 	height: 24px;
 	width: 28px;
 }
 
-.employeeDashboard_expandedSidenavContainer:nth-child(8) {
-	margin: 20vh auto;
+#icon_exit {
+	position: absolute;
+	bottom: 50px;
 }
 
-.employeeDashboard_icon_exitIcon {
+#icon_exit img {
 	height: 30px;
 	width: 28px;
 }
-
-.employeeDashboard_iconContainer > button, .employeeDashboard_iconContainer > a {
-	background-color: #434559;
-	border: none;
-} */
