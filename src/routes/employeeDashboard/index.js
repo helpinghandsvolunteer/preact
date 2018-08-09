@@ -71,6 +71,21 @@ export default class EmployeeDashboard extends Component {
 		);
 	}
 	
+	displayProfile = () => {
+		return (
+			<div>
+				<Profile />
+			</div>
+		);
+	}
+
+	displaySettings = () => {
+		return (
+			<div>
+				<Settings />
+			</div>
+		);
+	}
 
 	render() {
 		return (
@@ -108,6 +123,8 @@ export default class EmployeeDashboard extends Component {
 				
 				<div class={this.state.sidebarOpen ? style.employeeDashboard_mainContentContainerExp : style.employeeDashboard_mainContentContainer}>
 						{this.state.dashboardOpen && this.displayDashboard()}
+						{this.state.profileOpen && this.displayProfile()}
+						{this.state.settingsOpen && this.displaySettings()}
 				</div>
 			</div>
 		);
