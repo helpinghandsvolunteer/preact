@@ -35,9 +35,6 @@ export default class App extends Component {
               {name: "description", content: "Helping Hands Software application"},
               {property: "og:type", content: "article"}
           ]}
-          link={[
-              {rel: "canonical", href: "https://www.helpinghands.software/"}
-          ]}
         />
 			
 				<Router onChange={this.handleRoute}>
