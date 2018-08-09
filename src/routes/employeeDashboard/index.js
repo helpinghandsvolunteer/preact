@@ -7,9 +7,14 @@ import HeaderExp from '../../components/headerExp';
 import SideNavCollapsed from '../../components/sideNavCollapsed';
 import SideNavExpanded from '../../components/sideNavExpanded';
 
-import Dashboard from '../../components/eeDashboard';
-import Profile from '../../components/eeProfile';
-import Settings from '../../components/eeSettings';
+import Dashboard from '../../components/ee/Dashboard';
+import Profile from '../../components/ee/Profile';
+import Settings from '../../components/ee/Settings';
+import Events from '../../components/ee/Events';
+import Messages from '../../components/ee/Messages';
+import Network from '../../components/ee/Network';
+import Saved from '../../components/ee/Saved';
+import Activity from '../../components/ee/Activity';
 
 export default class EmployeeDashboard extends Component {
 	state = {
@@ -17,6 +22,11 @@ export default class EmployeeDashboard extends Component {
 		dashboardOpen: true,
 		profileOpen: false,
 		settingsOpen: false,
+		eventsOpen: false,
+		messagesOpen: false,
+		networkOpen: false,
+		savedOpen: false,
+		activityOpen: false
 	};
 
 	handleViewSidebar = () => {
@@ -44,6 +54,11 @@ export default class EmployeeDashboard extends Component {
 			dashboardOpen: true,
 			profileOpen: false,
 			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: false
 		});
 	}
 
@@ -52,6 +67,11 @@ export default class EmployeeDashboard extends Component {
 			dashboardOpen: false,
 			profileOpen: true,
 			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: false
 		});
 	}
 
@@ -60,32 +80,88 @@ export default class EmployeeDashboard extends Component {
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: true,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: false
 		});
 	}
 
-	displayDashboard = () => {
-		return (
-			<div>
-				<Dashboard />
-			</div>
-		);
-	}
-	
-	displayProfile = () => {
-		return (
-			<div>
-				<Profile />
-			</div>
-		);
+	handleOpenEvents = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: false,
+			eventsOpen: true,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: false
+		});
 	}
 
-	displaySettings = () => {
-		return (
-			<div>
-				<Settings />
-			</div>
-		);
+	handleOpenMessages = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: true,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: false
+		});
 	}
+
+	handleOpenNetwork = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: true,
+			savedOpen: false,
+			activityOpen: false
+		});
+	}
+
+	handleOpenSaved = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: true,
+			activityOpen: false
+		});
+	}
+
+	handleOpenActivity = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: false,
+			eventsOpen: false,
+			messagesOpen: false,
+			networkOpen: false,
+			savedOpen: false,
+			activityOpen: true
+		});
+	}
+
+	displayDashboard = () => (<div><Dashboard /></div>);
+	displayProfile = () => (<div><Profile /></div>);
+	displaySettings = () => (<div><Settings /></div>);
+	displayEvents = () => (<div><Events /></div>);
+	displayMessages = () => (<div><Messages /></div>);
+	displayNetwork = () => (<div><Network /></div>);
+	displaySaved = () => (<div><Saved /></div>);
+	displayActivity = () => (<div><Activity /></div>);
+
 
 	render() {
 		return (
@@ -118,13 +194,37 @@ export default class EmployeeDashboard extends Component {
 					</div>
 				</div>
 
-				{this.state.sidebarOpen ? <SideNavExpanded switchSidebar={this.handleViewSidebar} /> : <SideNavCollapsed switchSidebar={this.handleViewSidebar} />}
+				{this.state.sidebarOpen 
+					? 
+					<SideNavExpanded 
+						switchSidebar={this.handleViewSidebar} 
+						onOpenDashboard={this.handleOpenDashboard} 
+						onOpenEvents={this.handleOpenEvents}
+						onOpenMessages={this.handleOpenMessages}
+						onOpenNetwork={this.handleOpenNetwork}
+						onOpenSaved={this.handleOpenSaved}
+						onOpenActivity={this.handleOpenActivity}  /> 
+					: 
+					<SideNavCollapsed 
+						switchSidebar={this.handleViewSidebar}
+						onOpenDashboard={this.handleOpenDashboard} 
+						onOpenEvents={this.handleOpenEvents}
+						onOpenMessages={this.handleOpenMessages}
+						onOpenNetwork={this.handleOpenNetwork}
+						onOpenSaved={this.handleOpenSaved}
+						onOpenActivity={this.handleOpenActivity}  /> 
+				}
 
 				
 				<div class={this.state.sidebarOpen ? style.employeeDashboard_mainContentContainerExp : style.employeeDashboard_mainContentContainer}>
 						{this.state.dashboardOpen && this.displayDashboard()}
 						{this.state.profileOpen && this.displayProfile()}
 						{this.state.settingsOpen && this.displaySettings()}
+						{this.state.eventsOpen && this.displayEvents()}
+						{this.state.messagesOpen && this.displayMessages()}
+						{this.state.networkOpen && this.displayNetwork()}
+						{this.state.savedOpen && this.displaySaved()}
+						{this.state.activityOpen && this.displayActivity()}
 				</div>
 			</div>
 		);
