@@ -1,33 +1,133 @@
-.employer {
-	align-items: center;
-	background-color: #2B2B2B;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+/* top nav bar */
+.employeeDashboard {
+	background-color: #E2E5ED;
 	height: 100%;
 	width: 100%;
 }
 
-.employer>a {
-	text-decoration: none;
+.employerDashboard_flexContainer, .employeeDashboard_flexContainerExp {
+	align-items: baseline;
+	display: flex;
+	flex-flow: row nowrap;
+	float: left;
+	justify-content: space-between;
+	padding: 35px 25px 0 80px;
+	text-align: right;
+	width: calc(100vw - 100px);
 }
 
-.employer_header {
-	border-bottom: solid 3px #1A937C;
-	color: #1A937C;
-	font-family: 'Gotham-Black';
-	font-size: 75px;
-	margin: 0;
-	padding-bottom: 25px;
-	text-align: center;
-	width: 197px;
+.employeeDashboard_flexContainerExp {
+	padding: 35px 25px 0 200px;
 }
 
-.employer_paragraph {
-	color: #FFFFFF;
+.employeeDashboard_link, .employeeDashboard_link_active {
+	cursor: pointer;
+	height: 15px;
+	padding-right: 40px;
+	text-transform: uppercase;
+}
+
+.employeeDashboard_link {
+	color: #dddddd;	
+	font-family: "DINPro-Regular";
+}
+
+.employeeDashboard_link_active {
+	color: #ffffff;	
+	font-family: "DINPro-Bold";
+}
+
+.employeeDashboard_linkContainer {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.employeeDashboard_logo {
+	float: left;
+	padding: 41px 0 0 45px;
+	width: 100px;
+}
+
+.employeeDashboard_logo_exp {
+	float: left;
+	padding: 34px 0 0 45px;
+	width: 100px;
+}
+
+.employeeDashboard_profileContainer_img {
+	display: block;
+	float: left;
+	height: 40px;
+	margin: 0 20px;
+	width: 40px;
+}
+
+.employeeDashboard_profileContainer_p {
+	color: #dddddd;
+	float: left;
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
-	padding-top: 6px;
-	text-align: center;
-	text-transform: uppercase;
+	margin: 0;
+	padding-top: 8px;
+	
+}
+
+.employeeDashboard_search, .employeeDashboard_searchExp {
+	border-radius: 25px;
+	font-family: 'DINPro-Regular';
+	font-size: 15px;
+	height: 46px;
+	width: 426px;
+}
+
+.employeeDashboard_searchExp {
+	width: calc(100vw - 600px);
+	max-width: 1350px;
+}
+
+.employeeDashboard_search::placeholder {
+	color: #ADADAD;
+}
+
+.employeeDashboard_searchContainer > img {
+	height: 20px;
+	left: 35px;
+	position: relative;
+	top: 5px;
+}
+
+.employeeDashboard_searchContainer > input {
+	background: #F3F3F5;
+	color: #303030;
+	padding-left: 39px;
+}
+
+.employeeDashboard_searchProfileContainer {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.employeeDashboard_topnav {
+	background-color: #37394C;
+	height: 124px;
+	position: fixed;
+	z-index: 10;
+}
+
+.employeeDashboard_mainContentContainerExp, .employeeDashboard_mainContentContainer {
+	position: absolute;
+	top: 124px;
+} 
+
+.employeeDashboard_mainContentContainer {
+	left: 142px;
+	width: calc(100vw - 142px);
+}
+
+.employeeDashboard_mainContentContainerExp {
+	left: 309px;
+	width: calc(100vw - 309px);
 }
