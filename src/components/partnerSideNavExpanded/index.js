@@ -56,7 +56,7 @@ const sideNavExpanded = (props) => (
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x.png" alt="friends icon" />	
 						}
 					</div>
-					<p class={props.networkOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>My Network</p>
+					<p class={props.networkOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Volunteers</p>
 				</Link>
 			</div>
 
