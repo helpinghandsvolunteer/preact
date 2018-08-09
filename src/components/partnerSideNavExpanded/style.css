@@ -1,0 +1,117 @@
+/* 
+ *  Side Nav Bar - Expanded state
+ */
+
+ .employeeDashboard_exp_sidenav {
+	background-color: #414141;
+	height: 100vh;
+	position: fixed;
+	width: 309px;
+} 
+
+.employeeDashboard_exp_iconsContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+	margin-top: 160px;
+}
+
+.employeeDashboard_exp_iconInnerContainer {
+	width: 90px;
+	padding-left: 31px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.employeeDashboard_exp_iconContainer, .employeeDashboard_exp_iconContainer a {
+	margin-top: 8px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.employeeDashboard_exp_iconContainer {
+	margin-top: 10px;
+}
+
+.employeeDashboard_exp_p {
+	color: #dddddd;
+	font-family: 'DINPro-Regular';
+	font-size: 15px;
+	line-height: 1.333;
+	margin: 10px inherit;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.employeeDashboard_exp_p_active {
+	color: #ffffff;
+	font-family: 'DINPro-Bold';
+	text-transform: uppercase;
+}
+
+/* 
+ * Icons
+ *
+ *
+ */
+#icon_collapse {
+	padding-bottom: 10px;
+}
+#icon_collapse button {
+	background-color: #414141;
+	border: none;
+}
+#icon_collapse img {
+	background-color: #414141;
+	border: none;
+	height: 18px;
+	width: 14px;
+}
+#icon_collapse p {
+	margin-top: 13px;
+}
+
+#icon_dashboard img {
+	height: 26px;
+	width: 31px;
+}
+
+#icon_dashboard p {
+	color: #fff;
+}
+
+#icon_events img {
+	height: 28px;
+	width: 30px;
+}
+
+#icon_messages img {
+	height: 35px;
+	width: 35px;
+}
+
+#icon_network img {
+	height: 27px;
+	width: 45px;
+}
+
+#icon_saves img {
+	height: 29px;
+	width: 22px;
+}
+
+#icon_activity img {
+	height: 24px;
+	width: 28px;
+}
+
+#icon_exit {
+	position: absolute;
+	bottom: 50px;
+}
+
+#icon_exit img {
+	height: 30px;
+	width: 28px;
+}

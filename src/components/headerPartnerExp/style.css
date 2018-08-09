@@ -1,10 +1,10 @@
-.headerER > a {
-	color: #1A937C;
+.headerPartner > a {
+	color: #FCA552;
 	text-decoration: none;
 	width: 100px;
 }
 
-.headerER_p {
+.headerPartner_p {
 	font-family: 'Gotham-Black';
 	font-size: 25px;
 	line-height: 1;

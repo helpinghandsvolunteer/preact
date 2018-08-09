@@ -2,13 +2,13 @@ import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style';
 
-const HeaderEE = () => (
-	<div class={style.headerEE}>
+const HeaderER = () => (
+	<div class={style.headerER}>
 		<Link href="/">
-			<p class={style.headerEE_p}>Helping</p>
-			<p class={style.headerEE_p}>Hands</p>
+			<p class={style.headerER_p}>Helping</p>
+			<p class={style.headerER_p}>Hands</p>
 		</Link>
 	</div>
 );
 
-export default HeaderEE;
+export default HeaderER;

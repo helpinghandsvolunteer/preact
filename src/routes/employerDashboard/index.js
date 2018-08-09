@@ -13,7 +13,6 @@ import Settings from '../../components/er/Settings';
 import Events from '../../components/er/Events';
 import Messages from '../../components/er/Messages';
 import Network from '../../components/er/Network';
-import Saved from '../../components/er/Saved';
 import Activity from '../../components/er/Activity';
 
 export default class EmployeeDashboard extends Component {
@@ -25,7 +24,6 @@ export default class EmployeeDashboard extends Component {
 		eventsOpen: false,
 		messagesOpen: false,
 		networkOpen: false,
-		savedOpen: false,
 		activityOpen: false
 	};
 
@@ -57,7 +55,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -70,7 +67,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -83,7 +79,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -96,7 +91,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: true,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -109,7 +103,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: true,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -122,7 +115,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: true,
-			savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -135,7 +127,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: true,
 			activityOpen: false
 		});
 	}
@@ -148,7 +139,6 @@ export default class EmployeeDashboard extends Component {
 			eventsOpen: false,
 			messagesOpen: false,
 			networkOpen: false,
-			savedOpen: false,
 			activityOpen: true
 		});
 	}
@@ -159,7 +149,6 @@ export default class EmployeeDashboard extends Component {
 	displayEvents = () => (<div><Events /></div>);
 	displayMessages = () => (<div><Messages /></div>);
 	displayNetwork = () => (<div><Network /></div>);
-	displaySaved = () => (<div><Saved /></div>);
 	displayActivity = () => (<div><Activity /></div>);
 
 
@@ -208,7 +197,6 @@ export default class EmployeeDashboard extends Component {
 						eventsOpen={this.state.eventsOpen}
 						messagesOpen={this.state.messagesOpen}
 						networkOpen={this.state.networkOpen}
-						savedOpen={this.state.savedOpen}
 						activityOpen={this.state.activityOpen}  
 					/> 
 					: 
@@ -224,7 +212,6 @@ export default class EmployeeDashboard extends Component {
 						eventsOpen={this.state.eventsOpen}
 						messagesOpen={this.state.messagesOpen}
 						networkOpen={this.state.networkOpen}
-						savedOpen={this.state.savedOpen}
 						activityOpen={this.state.activityOpen}  
 					/> 
 				}
@@ -237,7 +224,6 @@ export default class EmployeeDashboard extends Component {
 						{this.state.eventsOpen && this.displayEvents()}
 						{this.state.messagesOpen && this.displayMessages()}
 						{this.state.networkOpen && this.displayNetwork()}
-						{this.state.savedOpen && this.displaySaved()}
 						{this.state.activityOpen && this.displayActivity()}
 				</div>
 			</div>
