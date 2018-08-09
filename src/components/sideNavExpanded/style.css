@@ -23,10 +23,14 @@
 }
 
 .employeeDashboard_exp_iconContainer, .employeeDashboard_exp_iconContainer a {
-	margin-top: 10px;
+	margin-top: 8px;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+}
+
+.employeeDashboard_exp_iconContainer {
+	margin-top: 10px;
 }
 
 .employeeDashboard_exp_p {
@@ -34,7 +38,7 @@
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
 	line-height: 1.333;
-	margin-top: 15px;
+	margin: 10px inherit;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -56,6 +60,9 @@
 	border: none;
 	height: 18px;
 	width: 14px;
+}
+#icon_collapse p {
+	margin-top: 13px;
 }
 
 #icon_dashboard img {

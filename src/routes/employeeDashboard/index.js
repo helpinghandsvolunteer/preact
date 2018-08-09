@@ -3,6 +3,7 @@ import { Link } from 'preact-router/match';
 import style from './style';
 
 import HeaderEE from '../../components/headerEE';
+import HeaderExp from '../../components/headerExp';
 import SideNavCollapsed from '../../components/sideNavCollapsed';
 import SideNavExpanded from '../../components/sideNavExpanded';
 
@@ -15,13 +16,29 @@ export default class EmployeeDashboard extends Component {
 		this.setState({ sidebarOpen: !this.state.sidebarOpen });
 	}
 
+	displayCollapsedLogo = () => {
+		return (
+			<div class={style.employeeDashboard_logo}>
+				<HeaderEE />
+			</div>
+		)
+	}
+
+	displayExpandedLogo = () => {
+		return (
+			<div class={style.employeeDashboard_logo}>
+				<HeaderExp />
+			</div>
+		)
+	}
+
 	render() {
 		return (
 			<div class={style.employeeDashboard}>
 				<div class={style.employeeDashboard_topnav}>
-					<div class={style.employeeDashboard_logo}>
-						<HeaderEE />
-					</div>
+
+				{this.state.sidebarOpen ? this.displayExpandedLogo() : this.displayCollapsedLogo() }			
+
 					<div class={style.employerDashboard_flexContainer}>
 						<div class={style.employeeDashboard_linkContainer}>
 							<p class={style.employeeDashboard_link}>Dashboard</p>
