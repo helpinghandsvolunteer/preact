@@ -9,7 +9,10 @@ import SideNavExpanded from '../../components/sideNavExpanded';
 
 export default class EmployeeDashboard extends Component {
 	state = {
-		sidebarOpen: true
+		sidebarOpen: true,
+		dashboardOpen: true,
+		profileOpen: false,
+		settingsOpen: false,
 	};
 
 	handleViewSidebar = () => {
@@ -31,6 +34,30 @@ export default class EmployeeDashboard extends Component {
 			</div>
 		)
 	}
+
+	handleOpenDashboard = () => {
+		this.setState({ 
+			dashboardOpen: true,
+			profileOpen: false,
+			settingsOpen: false,
+		});
+	}
+
+	handleOpenProfile = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: true,
+			settingsOpen: false,
+		});
+	}
+
+	handleOpenSettings = () => {
+		this.setState({ 
+			dashboardOpen: false,
+			profileOpen: false,
+			settingsOpen: true,
+		});
+	}
 	
 
 	render() {
@@ -44,9 +71,9 @@ export default class EmployeeDashboard extends Component {
 
 						{!this.state.sidebarOpen &&
 						<div class={style.employeeDashboard_linkContainer}>
-							<p class={style.employeeDashboard_link_active}>Dashboard</p>
-							<p class={style.employeeDashboard_link}>My Profile</p>
-							<p class={style.employeeDashboard_link}>Settings</p>
+							<p onClick={this.handleOpenDashboard} class={this.state.dashboardOpen ? style.employeeDashboard_link_active : style.employeeDashboard_link}>Dashboard</p>
+							<p onClick={this.handleOpenProfile} class={this.state.profileOpen ? style.employeeDashboard_link_active : style.employeeDashboard_link}>My Profile</p>
+							<p onClick={this.handleOpenSettings} class={this.state.settingsOpen ? style.employeeDashboard_link_active : style.employeeDashboard_link}>Settings</p>
 						</div>
 						}
 
