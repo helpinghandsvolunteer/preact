@@ -56,18 +56,7 @@ const sideNavExpanded = (props) => (
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x.png" alt="friends icon" />	
 						}
 					</div>
-					<p class={props.networkOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>My Network</p>
-				</Link>
-			</div>
-
-			<div id={style.icon_saves} class={style.employeeDashboard_exp_iconContainer}>
-				<Link >
-					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenSaved}>
-						{props.savedOpen ? <img src="https://storage.googleapis.com/helpinghands/images/bookmark-icon%402x-act.png" alt="bookmark icon"/> :
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/bookmark-icon%402x.png" alt="bookmark icon" />	
-						}
-					</div>
-					<p class={props.savedOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Saved</p>
+					<p class={props.networkOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Employees</p>
 				</Link>
 			</div>
 
