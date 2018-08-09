@@ -2,7 +2,7 @@ import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style';
 
-const HeaderPartner = () => (
+const HeaderPartnerExp = () => (
 	<div class={style.headerPartner}>
 		<Link href="/partner">
 			<p class={style.headerPartner_p}>Helping</p>
@@ -11,4 +11,4 @@ const HeaderPartner = () => (
 	</div>
 );
 
-export default HeaderPartner;
+export default HeaderPartnerExp;
