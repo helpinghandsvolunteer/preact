@@ -24,7 +24,8 @@ export default class EmployeeDashboard extends Component {
 		settingsOpen: false,
 		eventsOpen: false,
 		messagesOpen: false,
-		networkOpen: false,
+    networkOpen: false,
+    savedOpen: false,
 		activityOpen: false
 	};
 
@@ -55,7 +56,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -67,7 +69,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -79,7 +82,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: true,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -91,7 +95,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: true,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -103,7 +108,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: true,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -115,7 +121,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: true,
+      networkOpen: true,
+      savedOpen: false,
 			activityOpen: false
 		});
 	}
@@ -127,7 +134,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: true,
 			activityOpen: false
 		});
 	}
@@ -139,7 +147,8 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: false,
 			eventsOpen: false,
 			messagesOpen: false,
-			networkOpen: false,
+      networkOpen: false,
+      savedOpen: false,
 			activityOpen: true
 		});
 	}
@@ -198,7 +207,8 @@ export default class EmployeeDashboard extends Component {
 						dashboardOpen={this.state.dashboardOpen}
 						eventsOpen={this.state.eventsOpen}
 						messagesOpen={this.state.messagesOpen}
-						networkOpen={this.state.networkOpen}
+            networkOpen={this.state.networkOpen}
+            savedOpen={this.state.savedOpen}
 						activityOpen={this.state.activityOpen}  
 					/> 
 					: 
@@ -213,7 +223,8 @@ export default class EmployeeDashboard extends Component {
 						dashboardOpen={this.state.dashboardOpen}
 						eventsOpen={this.state.eventsOpen}
 						messagesOpen={this.state.messagesOpen}
-						networkOpen={this.state.networkOpen}
+            networkOpen={this.state.networkOpen}
+            savedOpen={this.state.savedOpen}
 						activityOpen={this.state.activityOpen}  
 					/> 
 				}
