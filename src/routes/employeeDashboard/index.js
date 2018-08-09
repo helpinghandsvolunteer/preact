@@ -31,6 +31,7 @@ export default class EmployeeDashboard extends Component {
 			</div>
 		)
 	}
+	
 
 	render() {
 		return (
@@ -39,14 +40,16 @@ export default class EmployeeDashboard extends Component {
 
 				{this.state.sidebarOpen ? this.displayExpandedLogo() : this.displayCollapsedLogo() }			
 
+
 					<div class={style.employerDashboard_flexContainer}>
-					{!this.state.sidebarOpen &&
+
+						{!this.state.sidebarOpen &&
 						<div class={style.employeeDashboard_linkContainer}>
 							<p class={style.employeeDashboard_link_active}>Dashboard</p>
 							<p class={style.employeeDashboard_link}>My Profile</p>
 							<p class={style.employeeDashboard_link}>Settings</p>
 						</div>
-					}
+						}
 
 						<div class={style.employeeDashboard_searchProfileContainer}>
 							<div class={style.employeeDashboard_searchContainer}>

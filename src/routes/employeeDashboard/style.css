@@ -16,6 +16,18 @@
 	width: calc(100vw - 100px);
 }
 
+.employerDashboard_flexContainerExp {
+	align-items: baseline;
+	display: flex;
+	flex-flow: row nowrap;
+	float: left;
+	justify-content: space-between;
+	padding: 35px 25px 0 180px;
+	text-align: right;
+	width: calc(100vw - 100px);
+}
+
+
 .employeeDashboard_link {
 	color: #dddddd;	
 	font-family: "DINPro-Regular";
