@@ -17,6 +17,14 @@
 }
 
 .employeeDashboard_link {
+	color: #dddddd;	
+	font-family: "DINPro-Regular";
+	height: 15px;
+	padding-right: 40px;
+	text-transform: uppercase;
+}
+
+.employeeDashboard_link_active {
 	color: #ffffff;	
 	font-family: "DINPro-Bold";
 	height: 15px;

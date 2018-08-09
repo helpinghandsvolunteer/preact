@@ -41,7 +41,7 @@ export default class EmployeeDashboard extends Component {
 
 					<div class={style.employerDashboard_flexContainer}>
 						<div class={style.employeeDashboard_linkContainer}>
-							<p class={style.employeeDashboard_link}>Dashboard</p>
+							<p class={style.employeeDashboard_link_active}>Dashboard</p>
 							<p class={style.employeeDashboard_link}>My Profile</p>
 							<p class={style.employeeDashboard_link}>Settings</p>
 						</div>
