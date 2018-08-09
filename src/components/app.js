@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 
-import Header from './header';
+import Helmet from 'preact-helmet';
 
 // Code-splitting is automated for routes
 import Employee from '../routes/employeeHome';
@@ -26,6 +26,19 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
+        <Helmet 
+          htmlAttributes={{lang: "en", amp: undefined}}
+          title="Helping Hands" 
+          titleAttributes={{itemprop: "name", lang: "en"}}
+          base={{target: "_blank", href: "https://www.helpinghands.software/"}}
+          meta={[
+              {name: "description", content: "Helping Hands Software application"},
+              {property: "og:type", content: "article"}
+          ]}
+          link={[
+              {rel: "canonical", href: "https://www.helpinghands.software/"}
+          ]}
+        />
 			
 				<Router onChange={this.handleRoute}>
 					<Employee path="/" />
