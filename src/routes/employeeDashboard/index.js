@@ -40,8 +40,7 @@ export default class EmployeeDashboard extends Component {
 
 				{this.state.sidebarOpen ? this.displayExpandedLogo() : this.displayCollapsedLogo() }			
 
-
-					<div class={style.employerDashboard_flexContainer}>
+					<div class={this.state.sidebarOpen ? style.employeeDashboard_flexContainerExp : style.employerDashboard_flexContainer}>
 
 						{!this.state.sidebarOpen &&
 						<div class={style.employeeDashboard_linkContainer}>
@@ -54,7 +53,7 @@ export default class EmployeeDashboard extends Component {
 						<div class={style.employeeDashboard_searchProfileContainer}>
 							<div class={style.employeeDashboard_searchContainer}>
 								<img src="https://storage.googleapis.com/helpinghands/images/magnifying-glass-icon.png" alt="magnifying glass icon" />
-								<input class={style.employeeDashboard_search} placeholder="Search Events, Location, Friends, Companies" />
+								<input class={this.state.sidebarOpen ? style.employeeDashboard_searchExp : style.employeeDashboard_search} placeholder="Search Events, Location, Friends, Companies" />
 							</div>
 
 							<div class={style.employeeDashboard_profileContainer}>

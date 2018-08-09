@@ -5,7 +5,7 @@
 	width: 100%;
 }
 
-.employerDashboard_flexContainer {
+.employerDashboard_flexContainer, .employeeDashboard_flexContainerExp {
 	align-items: baseline;
 	display: flex;
 	flex-flow: row nowrap;
@@ -16,15 +16,8 @@
 	width: calc(100vw - 100px);
 }
 
-.employerDashboard_flexContainerExp {
-	align-items: baseline;
-	display: flex;
-	flex-flow: row nowrap;
-	float: left;
-	justify-content: space-between;
-	padding: 35px 25px 0 180px;
-	text-align: right;
-	width: calc(100vw - 100px);
+.employeeDashboard_flexContainerExp {
+	padding: 35px 25px 0 200px;
 }
 
 
@@ -81,12 +74,17 @@
 	
 }
 
-.employeeDashboard_search {
+.employeeDashboard_search, .employeeDashboard_searchExp {
 	border-radius: 25px;
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
 	height: 46px;
 	width: 426px;
+}
+
+.employeeDashboard_searchExp {
+	width: calc(100vw - 600px);
+	max-width: 1350px;
 }
 
 .employeeDashboard_search::placeholder {
