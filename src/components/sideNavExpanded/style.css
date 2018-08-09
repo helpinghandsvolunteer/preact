@@ -43,6 +43,12 @@
 	text-transform: uppercase;
 }
 
+.employeeDashboard_exp_p_active {
+	color: #ffffff;
+	font-family: 'DINPro-Bold';
+	text-transform: uppercase;
+}
+
 /* 
  * Icons
  *

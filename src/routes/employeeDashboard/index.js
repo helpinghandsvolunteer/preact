@@ -203,7 +203,14 @@ export default class EmployeeDashboard extends Component {
 						onOpenMessages={this.handleOpenMessages}
 						onOpenNetwork={this.handleOpenNetwork}
 						onOpenSaved={this.handleOpenSaved}
-						onOpenActivity={this.handleOpenActivity}  /> 
+						onOpenActivity={this.handleOpenActivity}
+						dashboardOpen={this.state.dashboardOpen}
+						eventsOpen={this.state.eventsOpen}
+						messagesOpen={this.state.messagesOpen}
+						networkOpen={this.state.networkOpen}
+						savedOpen={this.state.savedOpen}
+						activityOpen={this.state.activityOpen}  
+					/> 
 					: 
 					<SideNavCollapsed 
 						switchSidebar={this.handleViewSidebar}
@@ -212,7 +219,14 @@ export default class EmployeeDashboard extends Component {
 						onOpenMessages={this.handleOpenMessages}
 						onOpenNetwork={this.handleOpenNetwork}
 						onOpenSaved={this.handleOpenSaved}
-						onOpenActivity={this.handleOpenActivity}  /> 
+						onOpenActivity={this.handleOpenActivity}
+						dashboardOpen={this.state.dashboardOpen}
+						eventsOpen={this.state.eventsOpen}
+						messagesOpen={this.state.messagesOpen}
+						networkOpen={this.state.networkOpen}
+						savedOpen={this.state.savedOpen}
+						activityOpen={this.state.activityOpen}  
+					/> 
 				}
 
 				

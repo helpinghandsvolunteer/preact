@@ -18,27 +18,33 @@ const sideNavExpanded = (props) => (
 			<div id={style.icon_dashboard} class={style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenDashboard}>
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />
+						{props.dashboardOpen ? <img src="https://storage.googleapis.com/helpinghands/images/home-icon-active%402x.png" /> :
+							<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>Dashboard</p>
+					<p class={props.dashboardOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Dashboard</p>
 				</Link>
 			</div>
 
 			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenEvents}>
-						<img class={style.employeeDashboard_exp_icon}  src="https://storage.googleapis.com/helpinghands/images/cal-icon%402x.png" alt="events calendar icon" />
+						{props.eventsOpen ? <img src="https://storage.googleapis.com/helpinghands/images/cal-icon-act%402x%402x.png" /> :
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/cal-icon%402x.png" alt="active events icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>Events</p>
+					<p class={props.eventsOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Events</p>
 				</Link>
 			</div>
 
-			<div id={style.icon_messages} class={style.employeeDashboard_exp_iconContainer}>
-				<Link>
+			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
+				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenMessages}>
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x.png" alt="message icon" />
+						{props.messagesOpen ? <img src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x-act.png" /> :
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x.png" alt="active events icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>Messages</p>
+					<p class={props.messagesOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Messages</p>
 				</Link>
 			</div>
 
