@@ -72,7 +72,7 @@ const sideNavExpanded = (props) => (
 			</div>
 
 			<div id={style.icon_exit} class={style.employeeDashboard_exp_iconContainer}>
-				<Link href="/" class={style.employeeDashboard_icon} >
+				<Link href="/partner" class={style.employeeDashboard_icon} >
 					<div class={style.employeeDashboard_exp_iconInnerContainer}>
 						<img class={style.employeeDashboard_exp_icon}  src="https://storage.googleapis.com/helpinghands/images/exit-icon%402x.png" alt="exit" />
 					</div>
