@@ -70,8 +70,12 @@
 	font-size: 15px;
 	margin: 0;
 	padding-top: 8px;
-	
 }
+
+.employeeDashboard_profileContainer_p:hover {
+  color: #ffffff;
+  font-family: 'DINPro-Bold';
+} 
 
 .employeeDashboard_search, .employeeDashboard_searchExp {
 	border-radius: 25px;
