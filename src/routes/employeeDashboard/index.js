@@ -26,7 +26,7 @@ export default class EmployeeDashboard extends Component {
 
 	displayExpandedLogo = () => {
 		return (
-			<div class={style.employeeDashboard_logo}>
+			<div class={style.employeeDashboard_logo_exp}>
 				<HeaderExp />
 			</div>
 		)
