@@ -7,6 +7,10 @@ import HeaderExp from '../../components/headerExp';
 import SideNavCollapsed from '../../components/sideNavCollapsed';
 import SideNavExpanded from '../../components/sideNavExpanded';
 
+import Dashboard from '../../components/eeDashboard';
+import Profile from '../../components/eeProfile';
+import Settings from '../../components/eeSettings';
+
 export default class EmployeeDashboard extends Component {
 	state = {
 		sidebarOpen: true,
@@ -58,6 +62,14 @@ export default class EmployeeDashboard extends Component {
 			settingsOpen: true,
 		});
 	}
+
+	displayDashboard = () => {
+		return (
+			<div>
+				<Dashboard />
+			</div>
+		);
+	}
 	
 
 	render() {
@@ -92,6 +104,11 @@ export default class EmployeeDashboard extends Component {
 				</div>
 
 				{this.state.sidebarOpen ? <SideNavExpanded switchSidebar={this.handleViewSidebar} /> : <SideNavCollapsed switchSidebar={this.handleViewSidebar} />}
+
+				
+				<div class={this.state.sidebarOpen ? style.employeeDashboard_mainContentContainerExp : style.employeeDashboard_mainContentContainer}>
+						{this.state.dashboardOpen && this.displayDashboard()}
+				</div>
 			</div>
 		);
 	}

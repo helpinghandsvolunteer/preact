@@ -116,3 +116,18 @@
 	position: fixed;
 	z-index: 10;
 }
+
+.employeeDashboard_mainContentContainerExp, .employeeDashboard_mainContentContainer {
+	position: absolute;
+	top: 124px;
+} 
+
+.employeeDashboard_mainContentContainer {
+	left: 142px;
+	width: calc(100vw - 142px);
+}
+
+.employeeDashboard_mainContentContainerExp {
+	left: 309px;
+	width: calc(100vw - 309px);
+}
