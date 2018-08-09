@@ -18,7 +18,7 @@ const sideNavExpanded = (props) => (
 			<div id={style.icon_dashboard} class={style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenDashboard}>
-						{props.dashboardOpen ? <img src="https://storage.googleapis.com/helpinghands/images/home-icon-active%402x.png" /> :
+						{props.dashboardOpen ? <img src="https://storage.googleapis.com/helpinghands/images/home-icon-active%402x.png" alt="active home icon"/> :
 							<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />	
 						}
 					</div>
@@ -29,7 +29,7 @@ const sideNavExpanded = (props) => (
 			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenEvents}>
-						{props.eventsOpen ? <img src="https://storage.googleapis.com/helpinghands/images/cal-icon-act%402x%402x.png" /> :
+						{props.eventsOpen ? <img src="https://storage.googleapis.com/helpinghands/images/cal-icon-act%402x%402x.png" alt="active events icon" /> :
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/cal-icon%402x.png" alt="active events icon" />	
 						}
 					</div>
@@ -40,38 +40,45 @@ const sideNavExpanded = (props) => (
 			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenMessages}>
-						{props.messagesOpen ? <img src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x-act.png" /> :
+						{props.messagesOpen ? <img src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x-act.png" alt="active events icon"/> :
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x.png" alt="active events icon" />	
 						}
 					</div>
 					<p class={props.messagesOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Messages</p>
 				</Link>
-			</div>
+			</div> 
+
 
 			<div id={style.icon_network} class={style.employeeDashboard_exp_iconContainer}>
-				<Link>
+				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenNetwork}>
-						<img class={style.employeeDashboard_exp_icon}  src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x.png" alt="friends icon" />
+						{props.networkOpen ? <img src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x-act.png" alt="friends icon"/> :
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x.png" alt="friends icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>My Network</p>
+					<p class={props.networkOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>My Network</p>
 				</Link>
 			</div>
 
 			<div id={style.icon_saves} class={style.employeeDashboard_exp_iconContainer}>
-				<Link>
+				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenSaved}>
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/bookmark-icon%402x.png" alt="bookmark icon" />
+						{props.savedOpen ? <img src="https://storage.googleapis.com/helpinghands/images/bookmark-icon%402x-act.png" alt="bookmark icon"/> :
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/bookmark-icon%402x.png" alt="bookmark icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>Saved</p>
+					<p class={props.savedOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Saved</p>
 				</Link>
 			</div>
 
 			<div id={style.icon_activity} class={style.employeeDashboard_exp_iconContainer}>
-				<Link>
+				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenActivity}>
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/graph-icon%402x.png" alt="graphs icon" />
+						{props.activityOpen ? <img src="https://storage.googleapis.com/helpinghands/images/activity-icon%402x-act.png" alt="activity icon"/> :
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/graph-icon%402x.png" alt="activity icon" />	
+						}
 					</div>
-					<p class={style.employeeDashboard_exp_p}>Activity</p>
+					<p class={props.activityOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Activity</p>
 				</Link>
 			</div>
 
