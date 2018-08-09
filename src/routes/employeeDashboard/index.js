@@ -186,10 +186,10 @@ export default class EmployeeDashboard extends Component {
 								<input class={this.state.sidebarOpen ? style.employeeDashboard_searchExp : style.employeeDashboard_search} placeholder="Search Events, Location, Friends, Companies" />
 							</div>
 
-							<div class={style.employeeDashboard_profileContainer}>
+							<Link href="/profile/alyssaretzena" class={style.employeeDashboard_profileContainer}>
 								<img class={style.employeeDashboard_profileContainer_img} src="https://storage.googleapis.com/helpinghands/images/profile_avatar%402x.png" alt="your profile thumbnail" />
 								<p class={style.employeeDashboard_profileContainer_p}>Welcome Back!</p>
-							</div>
+							</Link>
 						</div>
 					</div>
 				</div>
