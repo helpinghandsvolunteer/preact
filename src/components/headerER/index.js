@@ -5,7 +5,7 @@ import style from './style';
 const HeaderER = () => (
 	<div class={style.headerER}>
 		<Link href="/employer">
-			<h1>HH</h1>
+			<p class={style.headerER_p}>HH</p>
 		</Link>
 	</div>
 );

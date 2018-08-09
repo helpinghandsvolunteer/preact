@@ -1,6 +1,6 @@
 /* top nav bar */
 .employeeDashboard {
-	background-color: #E2E5ED;
+	background-color: #E2EAED;
 	height: 100%;
 	width: 100%;
 }
@@ -111,7 +111,7 @@
 }
 
 .employeeDashboard_topnav {
-	background-color: #37394C;
+	background-color: #2B2B2B;
 	height: 124px;
 	position: fixed;
 	z-index: 10;

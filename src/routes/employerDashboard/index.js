@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style';
 
-import HeaderEE from '../../components/headerEE';
-import HeaderExp from '../../components/headerExp';
+import HeaderEE from '../../components/headerER';
+import HeaderExp from '../../components/headerERExp';
 import SideNavCollapsed from '../../components/erSideNavCollapsed';
 import SideNavExpanded from '../../components/erSideNavExpanded';
 

@@ -1,0 +1,15 @@
+.headerEE > a {
+	color: #1A937C;
+	text-decoration: none;
+	width: 100px;
+}
+
+.headerEE_p {
+	font-family: 'Gotham-Black';
+	font-size: 25px;
+	line-height: 1;
+	height: 25px;
+	margin: 0;
+	text-transform: uppercase;
+	width: 116px;
+}
