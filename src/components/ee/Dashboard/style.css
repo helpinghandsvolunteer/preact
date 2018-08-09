@@ -2,3 +2,42 @@
 	font-family: 'DINPro-Bold';
 	font-size: 15px;
 }
+.dash_adContainer {
+  position: fixed;
+  top: 144px;
+  right: 20px;
+}
+
+.dash_innerContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: flex-start;
+  padding: 20px 0 0 20px;
+  width: 1200px;
+}
+
+.event, .data, .ad_vert {
+  background-color: #ffffff;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #bcbcbc;
+  color: #000000;
+  margin: 10px;
+  padding: 10px;
+}
+
+.event {
+  height: 350px;
+  width: 200px;
+}
+
+.data {
+  height: 350px;
+  width: 1080px;
+}
+
+.ad_vert {
+  height: 600px;
+  width: 120px;
+}
