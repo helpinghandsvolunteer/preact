@@ -1,15 +1,15 @@
-.eeevents_container {
+.event_container {
 	font-family: 'DINPro-Bold';
 	font-size: 15px;
 }
 
-.dash_adContainer {
+.adContainer {
   position: fixed;
   top: 144px;
   right: 20px;
 }
 
-.dash_innerContainer {
+.event_innerContainer {
   align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
@@ -19,7 +19,7 @@
   width: 75vw;
 }
 
-.event, .data, .ad_vert {
+.eventCard, .data, .ad_vert {
   background-color: #ffffff;
   border-radius: 15px 15px 0 0;
   border: 1px solid #bcbcbc;
@@ -28,9 +28,13 @@
   padding: 10px;
 }
 
-.event {
-  height: 300px;
+.eventCard {
+  height: auto;
   width: 200px;
+}
+
+.eventCard_content {
+  height: 300px;
 }
 
 .data {
