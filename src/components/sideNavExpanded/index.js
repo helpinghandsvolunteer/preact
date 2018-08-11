@@ -15,7 +15,13 @@ const sideNavExpanded = (props) => (
 				<p class={style.employeeDashboard_exp_p}>Collapse Navigation</p>
 			</div>
 
-			<div id={style.icon_dashboard} class={style.employeeDashboard_exp_iconContainer_active}>
+
+	
+			
+			<div id={style.icon_dashboard} style={style.employeeDashboard_exp_iconContainer}>
+			
+
+
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenEvents}>
 						{props.dashboardOpen ? <img src="https://storage.googleapis.com/helpinghands/images/home-icon-active%402x.png" alt="active home icon"/> :
