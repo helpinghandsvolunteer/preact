@@ -1,5 +1,5 @@
 /* 
- *  Side Nav Bar - Expanded state
+ *  Side Nav Bar - Collapsed state
  */
 
  .employeeDashboard_exp_sidenav {
@@ -12,9 +12,10 @@
 .employeeDashboard_exp_iconsContainer {
 	display: flex;
 	flex-flow: column nowrap;
+	height: 100%;
 	justify-content: flex-start;
-	height: 100vh;
-	margin-top: 160px;
+	padding-top: 160px;
+	padding-bottom: 30px;
 }
 
 .employeeDashboard_exp_iconInnerContainer {
@@ -25,19 +26,32 @@
 }
 
 .employeeDashboard_exp_iconContainer, .employeeDashboard_exp_iconContainer a {
-	margin-top: 10px;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 }
 
+.employeeDashboard_exp_iconContainer {
+	margin: 15px 0;
+}
+
+.employeeDashboard_exp_p, .employeeDashboard_exp_p_active {
+	margin: 0;
+}
+
 .employeeDashboard_exp_p {
 	color: #dddddd;
-
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
 	line-height: 1.333;
+	margin: 0;
 	text-align: left;
+	text-transform: uppercase;
+}
+
+.employeeDashboard_exp_p_active {
+	color: #ffffff;
+	font-family: 'DINPro-Bold';
 	text-transform: uppercase;
 }
 
@@ -47,7 +61,6 @@
  *
  */
 #icon_collapse {
-	margin-bottom: 24px;
 	padding-bottom: 10px;
 }
 #icon_collapse button {
@@ -59,6 +72,9 @@
 	border: none;
 	height: 18px;
 	width: 14px;
+}
+#icon_collapse p {
+	
 }
 
 #icon_dashboard img {
