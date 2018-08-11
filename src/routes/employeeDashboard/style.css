@@ -9,9 +9,13 @@
 	display: flex;
 	flex-flow: row nowrap;
 	float: left;
-	justify-content: space-between;
-	padding: 35px 15px 0 80px;
-	text-align: right;
+	justify-content: flex-end;
+}
+
+.employerDashboard_flexContainer {
+	justify-content: flex-start;
+	padding: 35px 15px 0 20px;
+	min-width: 80vw;
 }
 
 .employeeDashboard_flexContainerExp {
@@ -110,14 +114,16 @@
 	align-items: center;
 	display: flex;
 	justify-content: flex-end;
+	margin-left: auto;
 }
 
 .employeeDashboard_topnav {
 	background-color: #37394C;
 	height: 124px;
+	min-width: 1200px;
 	position: fixed;
-	z-index: 10;
 	width: 100vw;
+	z-index: 10;
 }
 
 .employeeDashboard_mainContentContainerExp, .employeeDashboard_mainContentContainer {
