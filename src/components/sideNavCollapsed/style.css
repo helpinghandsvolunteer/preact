@@ -13,7 +13,9 @@
 	display: flex;
 	flex-flow: column nowrap;
 	height: 100%;
-	margin-top: 160px;
+	justify-content: flex-start;
+	padding-top: 160px;
+	padding-bottom: 30px;
 }
 
 .employeeDashboard_exp_iconInnerContainer {
@@ -24,19 +26,32 @@
 }
 
 .employeeDashboard_exp_iconContainer, .employeeDashboard_exp_iconContainer a {
-	margin-top: 19px;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
 }
 
+.employeeDashboard_exp_iconContainer {
+	margin: 15px 0;
+}
+
+.employeeDashboard_exp_p, .employeeDashboard_exp_p_active {
+	margin: 0;
+}
+
 .employeeDashboard_exp_p {
 	color: #dddddd;
-
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
 	line-height: 1.333;
+	margin: 0;
 	text-align: left;
+	text-transform: uppercase;
+}
+
+.employeeDashboard_exp_p_active {
+	color: #ffffff;
+	font-family: 'DINPro-Bold';
 	text-transform: uppercase;
 }
 
@@ -57,6 +72,9 @@
 	border: none;
 	height: 18px;
 	width: 14px;
+}
+#icon_collapse p {
+	
 }
 
 #icon_dashboard img {
@@ -94,8 +112,7 @@
 }
 
 #icon_exit {
-	position: absolute;
-	bottom: 50px;
+	margin-top: auto;
 }
 
 #icon_exit img {
