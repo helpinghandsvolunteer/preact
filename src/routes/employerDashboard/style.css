@@ -3,6 +3,7 @@
 	background-color: #E2EAED;
 	height: 100%;
 	width: 100%;
+	min-height: 768px;
 }
 
 .employerDashboard_flexContainer, .employeeDashboard_flexContainerExp {

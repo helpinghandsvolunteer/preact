@@ -10,9 +10,8 @@
 	flex-flow: row nowrap;
 	float: left;
 	justify-content: space-between;
-	padding: 35px 25px 0 80px;
+	padding: 35px 15px 0 80px;
 	text-align: right;
-	width: calc(100vw - 150px);
 }
 
 .employeeDashboard_flexContainerExp {
@@ -118,6 +117,7 @@
 	height: 124px;
 	position: fixed;
 	z-index: 10;
+	width: 100vw;
 }
 
 .employeeDashboard_mainContentContainerExp, .employeeDashboard_mainContentContainer {

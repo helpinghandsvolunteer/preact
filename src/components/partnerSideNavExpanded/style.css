@@ -39,7 +39,8 @@
 	font-family: 'DINPro-Regular';
 	font-size: 15px;
 	line-height: 1.333;
-	margin: 10px inherit;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -106,10 +107,10 @@
 	width: 28px;
 }
 
-#icon_exit {
+/* #icon_exit {
 	position: absolute;
 	bottom: 50px;
-}
+} */
 
 #icon_exit img {
 	height: 30px;
