@@ -15,33 +15,33 @@ const sideNavExpanded = (props) => (
 				<p class={style.employeeDashboard_exp_p}>Collapse Navigation</p>
 			</div>
 
-			<div id={style.icon_dashboard} class={style.employeeDashboard_exp_iconContainer}>
+			<div id={style.icon_dashboard} class={props.dashboardOpen ? style.employeeDashboard_exp_iconContainer_active : style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenDashboard}>
 						{props.dashboardOpen ? <img src="https://storage.googleapis.com/helpinghands/images/home-icon-active%402x.png" alt="active home icon"/> :
-							<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt="active home icon" />	
+							<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/home-icon%402x.png" alt=" home icon" />	
 						}
 					</div>
 					<p class={props.dashboardOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Dashboard</p>
 				</Link>
 			</div>
 
-			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
+			<div id={style.icon_events} class={props.eventsOpen ? style.employeeDashboard_exp_iconContainer_active : style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenEvents}>
 						{props.eventsOpen ? <img src="https://storage.googleapis.com/helpinghands/images/cal-icon-act%402x%402x.png" alt="active events icon" /> :
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/cal-icon%402x.png" alt="active events icon" />	
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/cal-icon%402x.png" alt=" events icon" />	
 						}
 					</div>
 					<p class={props.eventsOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Events</p>
 				</Link>
 			</div>
 
-			<div id={style.icon_events} class={style.employeeDashboard_exp_iconContainer}>
+			<div id={style.icon_events} class={props.messagesOpen ? style.employeeDashboard_exp_iconContainer_active : style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenMessages}>
 						{props.messagesOpen ? <img src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x-act.png" alt="active events icon"/> :
-						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x.png" alt="active events icon" />	
+						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/msg-icon%402x.png" alt=" events icon" />	
 						}
 					</div>
 					<p class={props.messagesOpen ? style.employeeDashboard_exp_p_active : style.employeeDashboard_exp_p}>Messages</p>
@@ -49,10 +49,10 @@ const sideNavExpanded = (props) => (
 			</div> 
 
 
-			<div id={style.icon_network} class={style.employeeDashboard_exp_iconContainer}>
+			<div id={style.icon_network} class={props.networkOpen ? style.employeeDashboard_exp_iconContainer_active : style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenNetwork}>
-						{props.networkOpen ? <img src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x-act.png" alt="friends icon"/> :
+						{props.networkOpen ? <img src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x-act.png" alt="active friends icon"/> :
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/friend-icon%402x.png" alt="friends icon" />	
 						}
 					</div>
@@ -60,10 +60,10 @@ const sideNavExpanded = (props) => (
 				</Link>
 			</div>
 
-			<div id={style.icon_activity} class={style.employeeDashboard_exp_iconContainer}>
+			<div id={style.icon_activity} class={props.activityOpen ? style.employeeDashboard_exp_iconContainer_active : style.employeeDashboard_exp_iconContainer}>
 				<Link >
 					<div class={style.employeeDashboard_exp_iconInnerContainer} onClick={props.onOpenActivity}>
-						{props.activityOpen ? <img src="https://storage.googleapis.com/helpinghands/images/activity-icon%402x-act.png" alt="activity icon"/> :
+						{props.activityOpen ? <img src="https://storage.googleapis.com/helpinghands/images/activity-icon%402x-act.png" alt="active activity icon"/> :
 						<img class={style.employeeDashboard_exp_icon} src="https://storage.googleapis.com/helpinghands/images/graph-icon%402x.png" alt="activity icon" />	
 						}
 					</div>
