@@ -26,8 +26,13 @@
 .employeeDashboard_link, .employeeDashboard_link_active {
 	cursor: pointer;
 	height: 15px;
-	padding-right: 40px;
+	margin-right: 40px;
+	padding-bottom: 74px;
 	text-transform: uppercase;
+}
+
+.employeeDashboard_link_active {
+	border-bottom: 3px solid #FCA552; 
 }
 
 .employeeDashboard_link {

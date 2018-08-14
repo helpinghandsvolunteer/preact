@@ -32,24 +32,20 @@ export default class EmployeeDashboard extends Component {
 		this.setState({ sidebarOpen: !this.state.sidebarOpen });
 	}
 
-	displayCollapsedLogo = () => {
-		return (
-			<div class={style.employeeDashboard_logo}>
-				<HeaderEE />
-			</div>
-		)
-	}
+	displayCollapsedLogo = () => (
+		<div class={style.employeeDashboard_logo}>
+			<HeaderEE />
+		</div>
+	)
 
-	displayExpandedLogo = () => {
-		return (
-			<div class={style.employeeDashboard_logo_exp}>
-				<HeaderExp />
-			</div>
-		)
-	}
+	displayExpandedLogo = () => (
+		<div class={style.employeeDashboard_logo_exp}>
+			<HeaderExp />
+		</div>
+	)
 
 	handleOpenDashboard = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: true,
 			profileOpen: false,
 			settingsOpen: false,
@@ -61,7 +57,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenProfile = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: true,
 			settingsOpen: false,
@@ -73,7 +69,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenSettings = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: true,
@@ -85,7 +81,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenEvents = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: false,
@@ -97,7 +93,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenMessages = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: false,
@@ -109,7 +105,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenNetwork = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: false,
@@ -121,7 +117,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenSaved = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: false,
@@ -133,7 +129,7 @@ export default class EmployeeDashboard extends Component {
 	}
 
 	handleOpenActivity = () => {
-		this.setState({ 
+		this.setState({
 			dashboardOpen: false,
 			profileOpen: false,
 			settingsOpen: false,
@@ -158,7 +154,7 @@ export default class EmployeeDashboard extends Component {
 			<div class={style.employeeDashboard}>
 				<div class={style.employeeDashboard_topnav}>
 
-				{this.state.sidebarOpen ? this.displayExpandedLogo() : this.displayCollapsedLogo() }			
+					{this.state.sidebarOpen ? this.displayExpandedLogo() : this.displayCollapsedLogo() }
 
 					<div class={this.state.sidebarOpen ? style.employeeDashboard_flexContainerExp : style.employerDashboard_flexContainer}>
 
@@ -184,27 +180,11 @@ export default class EmployeeDashboard extends Component {
 					</div>
 				</div>
 
-				{this.state.sidebarOpen 
-					? 
-					<SideNavExpanded 
-						switchSidebar={this.handleViewSidebar} 
-						onOpenDashboard={this.handleOpenDashboard} 
-						onOpenEvents={this.handleOpenEvents}
-						onOpenMessages={this.handleOpenMessages}
-						onOpenNetwork={this.handleOpenNetwork}
-						onOpenSaved={this.handleOpenSaved}
-						onOpenActivity={this.handleOpenActivity}
-						dashboardOpen={this.state.dashboardOpen}
-						eventsOpen={this.state.eventsOpen}
-						messagesOpen={this.state.messagesOpen}
-						networkOpen={this.state.networkOpen}
-						savedOpen={this.state.savedOpen}
-						activityOpen={this.state.activityOpen}  
-					/> 
-					: 
-					<SideNavCollapsed 
+				{this.state.sidebarOpen
+					?
+					<SideNavExpanded
 						switchSidebar={this.handleViewSidebar}
-						onOpenDashboard={this.handleOpenDashboard} 
+						onOpenDashboard={this.handleOpenDashboard}
 						onOpenEvents={this.handleOpenEvents}
 						onOpenMessages={this.handleOpenMessages}
 						onOpenNetwork={this.handleOpenNetwork}
@@ -215,19 +195,35 @@ export default class EmployeeDashboard extends Component {
 						messagesOpen={this.state.messagesOpen}
 						networkOpen={this.state.networkOpen}
 						savedOpen={this.state.savedOpen}
-						activityOpen={this.state.activityOpen}  
-					/> 
+						activityOpen={this.state.activityOpen}
+					/>
+					:
+					<SideNavCollapsed
+						switchSidebar={this.handleViewSidebar}
+						onOpenDashboard={this.handleOpenDashboard}
+						onOpenEvents={this.handleOpenEvents}
+						onOpenMessages={this.handleOpenMessages}
+						onOpenNetwork={this.handleOpenNetwork}
+						onOpenSaved={this.handleOpenSaved}
+						onOpenActivity={this.handleOpenActivity}
+						dashboardOpen={this.state.dashboardOpen}
+						eventsOpen={this.state.eventsOpen}
+						messagesOpen={this.state.messagesOpen}
+						networkOpen={this.state.networkOpen}
+						savedOpen={this.state.savedOpen}
+						activityOpen={this.state.activityOpen}
+					/>
 				}
 
 				
 				<div class={this.state.sidebarOpen ? style.employeeDashboard_mainContentContainerExp : style.employeeDashboard_mainContentContainer}>
-						{this.state.dashboardOpen && this.displayDashboard()}
-						{this.state.profileOpen && this.displayProfile()}
-						{this.state.settingsOpen && this.displaySettings()}
-						{this.state.eventsOpen && this.displayEvents()}
-						{this.state.messagesOpen && this.displayMessages()}
-						{this.state.networkOpen && this.displayNetwork()}
-						{this.state.activityOpen && this.displayActivity()}
+					{this.state.dashboardOpen && this.displayDashboard()}
+					{this.state.profileOpen && this.displayProfile()}
+					{this.state.settingsOpen && this.displaySettings()}
+					{this.state.eventsOpen && this.displayEvents()}
+					{this.state.messagesOpen && this.displayMessages()}
+					{this.state.networkOpen && this.displayNetwork()}
+					{this.state.activityOpen && this.displayActivity()}
 				</div>
 			</div>
 		);
