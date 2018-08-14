@@ -12,3 +12,12 @@
 	background: #F3F3F5;
 	height: 108px;
 }
+
+.settings_mainContainer {
+	background: #E2E5ED;
+	min-height: calc(100vh - 109px - 124px);
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+}
