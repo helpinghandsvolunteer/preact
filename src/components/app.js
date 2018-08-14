@@ -26,10 +26,10 @@ export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
-        <Helmet 
-          title="Helping Hands" 
-          titleAttributes={{itemprop: "name", lang: "en"}}
-        />
+				<Helmet
+					title="Helping Hands"
+					titleAttributes={{ itemprop: 'name', lang: 'en' }}
+				/>
 			
 				<Router onChange={this.handleRoute}>
 					<Employee path="/" />
@@ -39,7 +39,7 @@ export default class App extends Component {
 					<Partner path="/partner" />
 					<PartnerDashboard path="/partner/dashboard" />
 					<Home path="/home" />
-					<Profile path="/profile/" user="me" />
+					<Profile path="/profile/" user="ExampleMcExample" />
 					<Profile path="/profile/:user" />
 				</Router>
 			</div>

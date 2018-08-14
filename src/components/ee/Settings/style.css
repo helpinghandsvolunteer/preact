@@ -1,4 +1,14 @@
-.eesettings_container {
+.settings_container {
 	font-family: 'DINPro-Bold';
 	font-size: 15px;
+	left: 0;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.settings_navContainer {
+	background: #F3F3F5;
+	height: 108px;
 }
