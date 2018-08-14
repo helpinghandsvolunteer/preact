@@ -18,7 +18,7 @@ import Activity from '../../components/ee/Activity';
 
 export default class EmployeeDashboard extends Component {
 	state = {
-		sidebarOpen: false,
+		sidebarOpen: true,
 		dashboardOpen: true,
 		profileOpen: false,
 		settingsOpen: false,
